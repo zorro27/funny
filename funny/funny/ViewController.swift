@@ -21,12 +21,12 @@ class ViewController: UIViewController{
     deinit {
         removeKeyboardNotification()
     }
-  
-    @IBOutlet weak var myScrollView: UIScrollView!
     
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
+    
+    @IBOutlet weak var myScrollView: UIScrollView!
     
     func registerForKeyboardNotification() {
         NotificationCenter.default.addObserver(self , selector: #selector(kbWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
@@ -73,7 +73,7 @@ extension ViewController: UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell") as! funTableViewCell
-
+        
         let model = funs[indexPath.row]
         cell.funLabel1.text = model.joke
         return cell

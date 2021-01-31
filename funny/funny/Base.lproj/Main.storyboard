@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Jokes-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="funny" customModuleProvider="target" sceneMemberID="viewController">
@@ -147,7 +147,7 @@
                             <constraint firstItem="0BY-Vb-Yph" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lW5-Kd-jC7"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="0tL-Og-uHk"/>
+                    <tabBarItem key="tabBarItem" title="Jokes" image="smiley" catalog="system" id="0tL-Og-uHk"/>
                     <connections>
                         <outlet property="myScrollView" destination="0BY-Vb-Yph" id="15g-1u-fwN"/>
                         <outlet property="myTextField1" destination="YkI-OF-jWI" id="axm-yW-Ms5"/>
@@ -158,7 +158,7 @@
             </objects>
             <point key="canvasLocation" x="-488.40579710144931" y="857.8125"/>
         </scene>
-        <!--Item-->
+        <!--Api-->
         <scene sceneID="Ijh-LR-qvT">
             <objects>
                 <viewController id="Olz-20-5Kb" customClass="URLViewController" customModule="funny" customModuleProvider="target" sceneMemberID="viewController">
@@ -205,7 +205,7 @@
                             <constraint firstItem="2lo-kF-3Gp" firstAttribute="trailing" secondItem="Vj6-nm-e9L" secondAttribute="trailing" id="kVA-WH-ZOg"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="Ffd-9j-7B3"/>
+                    <tabBarItem key="tabBarItem" title="Api" image="laptopcomputer" catalog="system" id="Ffd-9j-7B3"/>
                     <connections>
                         <outlet property="webView" destination="2lo-kF-3Gp" id="v5U-WI-YBM"/>
                     </connections>
@@ -235,6 +235,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="laptopcomputer" catalog="system" width="128" height="73"/>
+        <image name="smiley" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
