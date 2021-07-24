@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lessonKeyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yn7-Yf-Fet">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lHi-a9-xHo">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vyv-Dp-7Kz">
+                                                <rect key="frame" x="84" y="672" width="246" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6E7-R5-Asy">
+                                                <rect key="frame" x="84" y="743" width="246" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiE-Nt-k1a">
+                                                <rect key="frame" x="153" y="402" width="108" height="92"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="108" id="9hA-jC-Bjs"/>
+                                                    <constraint firstAttribute="height" constant="92" id="MZ1-dg-Vda"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal" title="Button"/>
+                                                <connections>
+                                                    <action selector="clicButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Icl-f4-M5V"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="Vyv-Dp-7Kz" secondAttribute="bottom" constant="190" id="0Nf-Em-j4z"/>
+                                            <constraint firstItem="HiE-Nt-k1a" firstAttribute="centerX" secondItem="lHi-a9-xHo" secondAttribute="centerX" id="3da-5Y-ue1"/>
+                                            <constraint firstItem="6E7-R5-Asy" firstAttribute="centerX" secondItem="lHi-a9-xHo" secondAttribute="centerX" id="AmU-si-jpv"/>
+                                            <constraint firstItem="Vyv-Dp-7Kz" firstAttribute="width" secondItem="lHi-a9-xHo" secondAttribute="width" multiplier="0.594203" id="BFZ-lt-Drv"/>
+                                            <constraint firstItem="6E7-R5-Asy" firstAttribute="width" secondItem="lHi-a9-xHo" secondAttribute="width" multiplier="0.594203" id="KrQ-Jq-1ep"/>
+                                            <constraint firstItem="HiE-Nt-k1a" firstAttribute="centerY" secondItem="lHi-a9-xHo" secondAttribute="centerY" id="bi9-4A-FlT"/>
+                                            <constraint firstAttribute="bottom" secondItem="6E7-R5-Asy" secondAttribute="bottom" constant="119" id="iGG-5S-Yhl"/>
+                                            <constraint firstItem="Vyv-Dp-7Kz" firstAttribute="centerX" secondItem="lHi-a9-xHo" secondAttribute="centerX" id="kKW-W9-PPb"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="lHi-a9-xHo" firstAttribute="width" secondItem="yn7-Yf-Fet" secondAttribute="width" id="GsJ-iU-AWy"/>
+                                    <constraint firstItem="lHi-a9-xHo" firstAttribute="height" secondItem="yn7-Yf-Fet" secondAttribute="height" id="PCH-Jx-IRS"/>
+                                    <constraint firstAttribute="bottom" secondItem="lHi-a9-xHo" secondAttribute="bottom" id="Uf2-RV-ruy"/>
+                                    <constraint firstItem="lHi-a9-xHo" firstAttribute="top" secondItem="yn7-Yf-Fet" secondAttribute="top" id="WT1-XC-ONR"/>
+                                    <constraint firstItem="lHi-a9-xHo" firstAttribute="leading" secondItem="yn7-Yf-Fet" secondAttribute="leading" id="Y7h-Y6-aKz"/>
+                                    <constraint firstAttribute="trailing" secondItem="lHi-a9-xHo" secondAttribute="trailing" id="vc6-DK-MJq"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="ylK-T6-mmI"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="AOp-0Q-NJb"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yn7-Yf-Fet" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5SW-e5-Mor"/>
+                            <constraint firstAttribute="bottom" secondItem="yn7-Yf-Fet" secondAttribute="bottom" id="EQG-t0-NbX"/>
+                            <constraint firstItem="yn7-Yf-Fet" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="YLo-Ie-1RM"/>
+                            <constraint firstItem="yn7-Yf-Fet" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="zum-2O-ulj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myScrollView" destination="yn7-Yf-Fet" id="TB8-Xc-KR1"/>
+                        <outlet property="textField1" destination="Vyv-Dp-7Kz" id="GCE-am-Skt"/>
+                        <outlet property="textField2" destination="6E7-R5-Asy" id="TZK-9b-Yub"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15.942028985507248" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="map_test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7go-Vb-zjD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="718"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Icj-gW-oJp"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZ0-q6-9U0">
+                                <rect key="frame" x="15" y="728" width="86" height="30"/>
+                                <state key="normal" title="CheckPoint1"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6YZ-aH-tCY">
+                                <rect key="frame" x="15" y="768" width="88" height="30"/>
+                                <state key="normal" title="CheckPoint2"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E3T-Xy-XaT">
+                                <rect key="frame" x="15" y="808" width="88" height="30"/>
+                                <state key="normal" title="CheckPoint3"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zE-Qo-SZN">
+                                <rect key="frame" x="354" y="728" width="40" height="30"/>
+                                <state key="normal" title="Route"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHS-t2-tL2">
+                                <rect key="frame" x="358" y="768" width="36" height="30"/>
+                                <state key="normal" title="Clear"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7go-Vb-zjD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CI4-Vs-uc1"/>
+                            <constraint firstItem="7go-Vb-zjD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-44" id="DMF-F6-MyH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7go-Vb-zjD" secondAttribute="trailing" id="EaG-pW-9iN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6zE-Qo-SZN" secondAttribute="trailing" constant="20" id="P8T-Ih-rmY"/>
+                            <constraint firstItem="6zE-Qo-SZN" firstAttribute="top" secondItem="7go-Vb-zjD" secondAttribute="bottom" constant="10" id="S85-ys-eLA"/>
+                            <constraint firstItem="zHS-t2-tL2" firstAttribute="top" secondItem="6zE-Qo-SZN" secondAttribute="bottom" constant="10" id="WHi-ec-3G6"/>
+                            <constraint firstItem="xZ0-q6-9U0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="ccM-mT-7Eo"/>
+                            <constraint firstItem="E3T-Xy-XaT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="fNY-V6-n5c"/>
+                            <constraint firstItem="6YZ-aH-tCY" firstAttribute="top" secondItem="xZ0-q6-9U0" secondAttribute="bottom" constant="10" id="gBz-PY-pdF"/>
+                            <constraint firstItem="xZ0-q6-9U0" firstAttribute="top" secondItem="7go-Vb-zjD" secondAttribute="bottom" constant="10" id="jDX-BA-eUz"/>
+                            <constraint firstItem="6YZ-aH-tCY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="jZz-4O-vnI"/>
+                            <constraint firstItem="E3T-Xy-XaT" firstAttribute="top" secondItem="6YZ-aH-tCY" secondAttribute="bottom" constant="10" id="kKQ-GK-MKw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zHS-t2-tL2" secondAttribute="trailing" constant="20" id="tpB-zi-9bq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7go-Vb-zjD" secondAttribute="bottom" constant="144" id="yfu-wu-wyw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="CheckPoint1Button" destination="xZ0-q6-9U0" id="gHL-gU-Pub"/>
+                        <outlet property="CheckPoint2Button" destination="6YZ-aH-tCY" id="QmJ-7B-Se9"/>
+                        <outlet property="CheckPoint3Button" destination="E3T-Xy-XaT" id="ZWs-yO-y6G"/>
+                        <outlet property="clearButton" destination="zHS-t2-tL2" id="ITv-0y-qCB"/>
+                        <outlet property="mapView" destination="7go-Vb-zjD" id="zTi-rU-A3H"/>
+                        <outlet property="routeButton" destination="6zE-Qo-SZN" id="PT1-7W-FOC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="123.88392857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
